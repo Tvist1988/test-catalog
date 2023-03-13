@@ -12,9 +12,11 @@
 5. Накатите миграции:
 
 `./vendor/bin/sail php artisan migrate`
+
 6. Загрузите начальные данные:
 
 `./vendor/bin/sail php artisan db:seed`
+
 7. Создайте символическую ссылку на хранилище:
 
 `./vendor/bin/sail php artisan storage:link`
@@ -22,6 +24,7 @@
 8. сгенерируйте ключ:
 
 `./vendor/bin/sail php artisan key:generate`
+
 9. Установите модули node:
 
 `./vendor/bin/sail npm install`
