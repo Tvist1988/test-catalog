@@ -1,21 +1,28 @@
 1. Клонируйте репозиторий
-2. Запустите докер и выполните:
+2. Скопируйте файл .env.example в .env
+3. Установите зависимости
 
-`./vendor/bin/sail docker-compose up -d`
+`composer install --ignore-platform-reqs --no-scripts
+`
+4. Выполните:
 
-3. Установите зависимости:
+`./vendor/bin/sail up -d`
 
-`./vendor/bin/sail composer install`
-4. Накатите миграции:
+
+5. Накатите миграции:
 
 `./vendor/bin/sail php artisan migrate`
-5. Загрузите начальные данные:
+6. Загрузите начальные данные:
 
 `./vendor/bin/sail php artisan db:seed`
-6. Создайте символическую ссылку на хранилище:
+7. Создайте символическую ссылку на хранилище:
 
 `./vendor/bin/sail php artisan storage:link`
-7. Установите модули node:
+
+8. сгенерируйте ключ:
+
+`./vendor/bin/sail php artisan key:generate`
+8. Установите модули node:
 
 `./vendor/bin/sail npm install`
 
