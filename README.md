@@ -22,10 +22,12 @@
 8. сгенерируйте ключ:
 
 `./vendor/bin/sail php artisan key:generate`
-8. Установите модули node:
+9. Установите модули node:
 
 `./vendor/bin/sail npm install`
 
-8. Выполните:
+10. Выполните:
 
 `./vendor/bin/sail npm run dev`
+
+**страница регистрации - /register**
